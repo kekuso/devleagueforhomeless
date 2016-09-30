@@ -153,7 +153,7 @@
       document.getElementById('longitude').value = "";
       output.innerHTML ="geolocation removed";
       document.getElementById("locationInfo").style.display='block';
-      document.getElementById("locationButton").innerHTML='Send My GPS';
+      document.getElementById("locationButton").innerHTML='Send my location';
       showGeo = false;
     }
     else{
@@ -178,7 +178,7 @@
       output.innerHTML = "<p>Locating…</p>";
       navigator.geolocation.getCurrentPosition(success, error);
       document.getElementById("locationInfo").style.display='none';
-      document.getElementById("locationButton").innerHTML='Dont Send My GPS';
+      document.getElementById("locationButton").innerHTML="Don't send my location";
       document.getElementById('state').value = '';
       document.getElementById('area').value = '';
       document.getElementById('address').value = '';
@@ -190,7 +190,7 @@
  function toggleYinfo(){
     if(showInfo){
       document.getElementById("yourInfo").style.display='none';
-      document.getElementById("infoButton").innerHTML='Send my Informaton';
+      document.getElementById("infoButton").innerHTML='Send my information';
       document.getElementById('fName').value = '';
       document.getElementById('lName').value = '';
       document.getElementById('phoneNum').value = '';
@@ -199,7 +199,7 @@
     }
     else{
       document.getElementById("yourInfo").style.display='block';
-      document.getElementById("infoButton").innerHTML='Dont send my info';
+      document.getElementById("infoButton").innerHTML='Dont send my information';
       showInfo = true;
     }
  }
